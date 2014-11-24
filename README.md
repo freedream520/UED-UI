@@ -1,9 +1,8 @@
 <h1><a href="http://gitlab.ztesoft.com/ma.jinyun/ued-foundation" title="UED-foundation">UED-foundation</a></h1>
  
+## 功能简介
 
 UED-foundation  是基于社区开源项目构建的一个定制化前端UI框架。 
-
-## 功能简介
 
 ### 定制开发
 
@@ -47,3 +46,5 @@ UED-foundation
 ```
 
 ### 其他
+
+![Stated Clearly Image](http://farm4.staticflickr.com/3757/9364862224_217bcf88a8_c.jpg)  
