@@ -34,7 +34,7 @@ UED-foundation 使用 HTML5 开发，使用 CSS3 来做动画交互，平滑、�
 ### 目录结构
 
 ```
-UED-foundation
+
 |-- HISTORY.md
 |-- README.md
 |-- css        	# 样式文件
@@ -43,6 +43,7 @@ UED-foundation
 |-- tools       # 相关工具
 |-- images      # 图片
 |-- docs        # 文档
+
 ```
 
 ### 其他
