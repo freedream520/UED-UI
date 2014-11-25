@@ -2,7 +2,7 @@
 <html lang="en" class="ZSmart">
 <head>  
     <meta charset="utf-8" />
-    <title>demo</title>
+    <title>测试播放视频</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="css/fish-desktop.css"      type="text/css" /><!-- fish-desktop  -->
     <link rel="stylesheet" href="css/ZSmart.css"            type="text/css" /><!-- ZSmart UED UI 样式 -->
@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/font-awesome.min.css"  type="text/css" /><!-- 图标1 -->
     <link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" /><!-- 图标2 -->
     <link rel="stylesheet" href="css/style.css"             type="text/css" /><!-- 项目特有样式  -->
+    <link rel="stylesheet" href="js/jPlayer/jplayer.flat.css" type="text/css" /><!-- 视频插件 -->
+
     <!--[if lt IE 9]>
       <script src="js/ie/html5shiv.js"></script>
       <script src="js/ie/respond.min.js"></script>
@@ -165,20 +167,74 @@
               </section>
             </section>
             </aside><!-- /左侧菜单栏 -->
-            <section id="content">
+            <section>
                 <section class="vbox">
-                    <section class="scrollable padder-lg wrapper">
+                    <section class="scrollable wrapper-lg padder-lg">
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <div class="panel">
+                              <!-- video player start -->
+                              <div id="jp_container_1" class="jp-video-360p">
+                                <div class="jp-type-single pos-rlt">
+                                  <div id="jplayer_1" class="jp-jplayer jp-video" style="width: 100%; height: auto;">
+                                    <img id="jp_poster_0" style="width: 100%; height: auto; display: none;" src="images/m41.jpg">
+                                    <video id="jp_video_0" preload="metadata" src="js/jPlayer/big_buck_bunny_trailer.webm" title="Big Buck Bunny" style="width: 100%; height: auto;">
+                                    </video>
+                                  </div>
 
-                      <div  style="height:1020px;line-height:620px; text-align: center;font-size:28px;">
-                          内容......
-                      </div> 
-
+                                  <div class="jp-gui">
+                                    <div class="jp-video-play" style="display: none;">
+                                      <a class="fa fa-5x text-white fa-play-circle"></a>
+                                    </div>
+                                    <div class="jp-interface bg-info padder">
+                                      <div class="jp-controls">
+                                        <div>
+                                          <a class="jp-play" style="display: none;"><i class="icon-control-play i-2x"></i></a>
+                                          <a class="jp-pause hid" style="display: inline;"><i class="icon-control-pause i-2x"></i></a>
+                                        </div>
+                                        <div class="jp-progress">
+                                          <div class="jp-seek-bar dker" style="width: 100%;">
+                                            <div class="jp-play-bar dk" style="width: 6.80923076923077%;">
+                                            </div>
+                                            <div class="jp-title text-lt">测试播放视频</div>
+                                          </div>
+                                        </div>
+                                        <div class="hidden-xs hidden-sm jp-current-time text-xs text-muted">00:02</div>
+                                        <div class="hidden-xs hidden-sm jp-duration text-xs text-muted">00:33</div>
+                                        <div class="hidden-xs hidden-sm">
+                                          <a class="jp-mute" title="mute"><i class="icon-volume-2"></i></a>
+                                          <a class="jp-unmute hid" title="unmute" style="display: none;"><i class="icon-volume-off"></i></a>
+                                        </div>
+                                        <div class="hidden-xs hidden-sm jp-volume">
+                                          <div class="jp-volume-bar dk">
+                                            <div class="jp-volume-bar-value lter" style="width: 80%;"></div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <a class="jp-full-screen" title="full screen"><i class="fa fa-expand"></i></a>
+                                          <a class="jp-restore-screen" title="restore screen" style="display: none;"><i class="fa fa-compress text-lt"></i></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="jp-no-solution hide" style="display: none;">
+                                    <span>需要更新</span>
+                                    播放视频，您将需要请更新您的浏览器到最新版本或更新您的 <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash插件</a>.
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- / video player -->
+                              <div class="wrapper-lg">
+                                <h2 class="m-t-none text-black">Big Buck Bunny Trailer</h2>
+                                <div class="post-sum">
+                                  <p>jPlayer是一个基于jQuery的兼容所有平台所有终端的音频、视频多媒体播放器,根据浏览器自动选取HTML5和Flash播放方式。.</p>
+                                </div>
+                                <div class="line b-b"></div>
+                              </div>
+                            </div> 
+                          </div>
+                        </div>
                     </section>
-                    <footer class="footer bg-light">
-                     <div> 
-                        <p>Copyright © 2014 ZSmart UED. All rights reserved.</p>  
-                      </div>
-                    </footer>
                 </section>
             </section>
             <!-- /右侧主内容区 -->
@@ -191,6 +247,11 @@
   <!-- Bootstrap  -->
   <script src="js/bootstrap.js"></script>
   <!-- 项目公共功能  -->
-  <script src="js/ZSmart.js"></script>
+  <script src="js/ZSmart.js"></script> 
+  <!-- 视频插件 -->
+  <script type="text/javascript" src="js/jPlayer/jquery.jplayer.min.js"></script>
+  <script type="text/javascript" src="js/jPlayer/add-on/jplayer.playlist.min.js"></script>
+  <script type="text/javascript" src="js/jPlayer/demo.js"></script>
+
 </body>
 </html>

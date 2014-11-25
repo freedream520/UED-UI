@@ -2,7 +2,7 @@
 <html lang="en" class="ZSmart">
 <head>  
     <meta charset="utf-8" />
-    <title>demo</title>
+    <title>评论</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="css/fish-desktop.css"      type="text/css" /><!-- fish-desktop  -->
     <link rel="stylesheet" href="css/ZSmart.css"            type="text/css" /><!-- ZSmart UED UI 样式 -->
@@ -15,6 +15,14 @@
       <script src="js/ie/respond.min.js"></script>
       <script src="js/ie/excanvas.js"></script>
     <![endif]-->
+    <style type="text/css">
+      body{
+        color: #788188;
+        background-color: #f2f4f8;
+        -webkit-font-smoothing: antialiased;
+        line-height: 1.40;
+      }
+    </style>  
 </head>
 <body>
   <!-- 最外层 -->
@@ -165,20 +173,68 @@
               </section>
             </section>
             </aside><!-- /左侧菜单栏 -->
-            <section id="content">
+            <section>
                 <section class="vbox">
-                    <section class="scrollable padder-lg wrapper">
-
-                      <div  style="height:1020px;line-height:620px; text-align: center;font-size:28px;">
-                          内容......
-                      </div> 
-
-                    </section>
-                    <footer class="footer bg-light">
-                     <div> 
-                        <p>Copyright © 2014 ZSmart UED. All rights reserved.</p>  
+                    <section class="scrollable wrapper-lg padder-lg">
+                      <div class="row">
+                          
+                        <div class=" panel wrapper-lg">
+                            <h2 class="m-t-none text-black">测试文章</h2>
+                            <div class="post-sum">
+                              <p>
+                                排版设计中有非常多需要注意的细节，各种细节也会因为不同的情境、需求而不同，底下列出了四项排版最重要的要点，如下：
+                                <br>
+                                 </p><p> 排版最重要的四个要点:
+                                <br>
+                                 </p><p>
+                                1. 对齐（Alignment）
+                                任何东西都不能随意摆放，每一个元素之间都有某种视觉关系。利用对齐建立一个清楚整齐的外观。
+                                 </p><p>
+                                2. 亲密（Proximity）
+                                彼此相关的内容应靠在一起，反之不相关的内容保持距离。利用亲密性，强调画面的组织与架构。
+                                 </p><p>
+                                3. 重复（Repetition）
+                                重复视觉要素的颜色、字体、大小、空间等，增强条理性，也增强了整体一致性。
+                                 </p><p>
+                                4. 对比（Contrast）
+                                避免页面上元素太过相似，如果它们不同，哪就让他们截然不同。让重要的内容引人注目，让使用者间看到它们。
+                                 </p><p>
+                                参考资料：写给大家看的设计书、完形心理学
+                                                       </p>
+                            </div>
+                            <div class="line b-b"></div>
+                            <div class="text-muted">
+                                <i class="fa fa-user icon-muted"></i> by <a href="#" class="m-r-sm">文森</a>
+                                <i class="fa fa-clock-o icon-muted"></i> 2014-11-25 16:19:38
+                                <a href="#" class="m-l-sm"><i class="fa fa-comment-o icon-muted"></i> 3 次查看</a>
+                            </div>
+                         </div>
                       </div>
-                    </footer>
+                        <div class="row panel">
+                          <div class="col-sm-12">
+                              <h4 class="m-t-lg m-b">评论</h4>
+                            <form>
+                              <div class="form-group pull-in clearfix">
+                                <div class="col-sm-6">
+                                  <label>用户名</label>
+                                  <input type="text" class="form-control" placeholder="用户名">
+                                </div>
+                                <div class="col-sm-6">
+                                  <label>Email</label>
+                                  <input type="email" class="form-control" placeholder="Enter email">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label>内容</label>
+                                <textarea class="form-control" rows="5" placeholder="输入你的内容"></textarea>
+                              </div>
+                              <div class="form-group">
+                                <button type="submit" class="btn btn-success">我写好了</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                    </section>
                 </section>
             </section>
             <!-- /右侧主内容区 -->
@@ -191,6 +247,6 @@
   <!-- Bootstrap  -->
   <script src="js/bootstrap.js"></script>
   <!-- 项目公共功能  -->
-  <script src="js/ZSmart.js"></script>
+  <script src="js/ZSmart.js"></script> 
 </body>
 </html>

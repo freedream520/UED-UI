@@ -1,6 +1,13 @@
-/*项目公共JS*/
+/*!
+ *
+ * UED UI 公共JS 
+ * Copyright (c) 2014 ZSmart UED. All rights reserved.
+ * Version: 1.0.1
+ *
+ */
 
 +function ($) {
+  
   /*菜单缩放*/
   $(function(){
     $(document).on('click', '[data-toggle^="class"]', function(e){

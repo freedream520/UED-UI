@@ -1,0 +1,25 @@
+body{
+	font-family: "微软雅黑";
+}
+
+ .pagination{
+ 	float: right;
+ }
+
+/*-----------------------------测试用-----------------------------*/
+
+
+.header.navbar, .footer.navbar{
+	background-color: #5EB95E;
+}
+.footer p{
+	margin: 0;
+	padding: 0px;
+	height: 60px;
+	line-height: 60px;
+	color: #838483;
+	font-size: 12px;
+	text-align: center;
+	clear: both;
+	text-decoration: none;
+}

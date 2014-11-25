@@ -148,7 +148,7 @@ a:hover .caret-white {
   box-shadow: none;
 }
 .form-control:focus {
-  border-color: #545ca6;
+  border-color: #5EB95E;
 }
 .input-s-sm {
   width: 120px;
@@ -533,7 +533,7 @@ a.list-group-item:focus {
 }
 .header,
 .footer {
-  min-height: 50px;
+  min-height: 60px;
   padding: 0 15px;
 }
 .header > p,
@@ -616,19 +616,19 @@ body.container {
     border-left: 1px solid #cbd5dd;
     border-right: 1px solid #cbd5dd;
   }
-  .app,
-  .app body {
+  .ZSmart,
+  .ZSmart body {
     height: 100%;
     overflow: hidden;
   }
-  .app .hbox.stretch {
+  .ZSmart .hbox.stretch {
     height: 100%;
   }
-  .app .vbox > section,
-  .app .vbox > footer {
+  .ZSmart .vbox > section,
+  .ZSmart .vbox > footer {
     position: absolute;
   }
-  .app .vbox.flex > section > section {
+  .ZSmart .vbox.flex > section > section {
     overflow: auto;
   }
   .hbox {
@@ -818,8 +818,8 @@ body.container {
   text-decoration: none;
 }
 .navbar-brand img {
-  max-height: 20px;
-  margin-top: -4px;
+  /*max-height: 20px;*/
+  margin-top: 0px;
   vertical-align: middle;
 }
 .nav-primary li > a > i {
@@ -3640,6 +3640,52 @@ fieldset[disabled] .i-checks input + i:before {
   left: 80%;
   height: 40%;
 }
+
+/*与fish冲突的地方*/
+
+.header-md .navbar-nav > li > a {
+  padding: 19.8px;
+  background-color: #5EB95E;
+
+}
+.navbar-nav > li{
+  height: 60px;
+}
+.navbar-header > .btn { 
+  padding:14px 16px; 
+}
+.nav-xs .navbar-brand img {
+  max-height: 25px;
+} 
+.navbar-right .dropdown-menu{
+  right: 0;
+}
+input:focus, select:focus {
+  outline:0px solid #5EB95E; 
+}
+.header-md .navbar-nav > li > .mh{
+   padding:17.7px;
+   padding-top:20px;
+   padding-bottom: 15px;
+}
+.header  .nav > li > a:hover,.header   .nav > li > a:focus{
+  background-color: #4BD34B;
+  -moz-box-shadow: 0 7px 7px 0 rgba(255, 255, 255, .10)inset, 0 2px 7px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 7px 7px 0 rgba(255, 255, 255, .10)inset, 0 2px 7px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 7px 7px 0 rgba(255, 255, 255, .10)inset, 0 2px 7px 0 rgba(0, 0, 0, .2);
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
+  background:none;
+}
+.dropdown-menu > .panel{
+  margin: 0;
+}
+.header, .footer{
+  min-height: 60px;
+  padding: 0; 
+}
+
+/*-------------------end---------------------*/
 .animate .a1 {
   -webkit-animation: movingbar1 1s infinite alternate both;
   -moz-animation: movingbar1 1s infinite alternate both;
